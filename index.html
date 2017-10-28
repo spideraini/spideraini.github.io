@@ -1,675 +1,190 @@
+
+
 <!DOCTYPE html>
+<html lang="">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Hexo</title>
 
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.3',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "John Doe",
+  "url": "http://yoursite.com"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
 </script>
 
+    
 
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title>Hexo</title>
-  
-
-
-
-
-
-
-
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
 
 </head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>Hexo</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">John Doe</a>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Startseite
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archiv
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
     
-      
+    
 
-  
+    
+    
+    
 
-  
-  
-  
+    
+    <a href="/index.html" class="active item" >
+        <i class="home icon"></i>
+        首页
+    </a>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/28/leetcode68-Text-Justification/">
+    
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        
+
+<div class="ui relaxed list">
+
+    
+
+    
+
+    <div class="item">
+
+        <div class="content post-content">
+
+    <a class="header" style="display: inline-block;" href="/2017/10/28/leetcode68-Text-Justification/">
+        
+        
+        leetcode68. Text Justification
+    </a>
+    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-10-28T09:58:00.592Z" itemprop="datePublished">2017-10-28</time>
+
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+    <span class="post-description-item">
+        
     </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/28/leetcode68-Text-Justification/" itemprop="url">leetcode68. Text Justification</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-28T17:58:00+08:00">
-                2017-10-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.</p>
-<p>You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ‘ ‘ when necessary so that each line has exactly L characters.</p>
-<p>Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.</p>
-<p>For the last line of text, it should be left justified and no extra space is inserted between words.</p>
-<p>For example,<br>words: [“This”, “is”, “an”, “example”, “of”, “text”, “justification.”]<br>L: 16.</p>
-<p>Return the formatted lines as:</p>
-<pre><code>[
-  &quot;This    is    an&quot;,
-  &quot;example  of text&quot;,
-  &quot;justification.  &quot;
-]
-</code></pre><p>问题如上，此题要求把给定的一组单词合理划分成几行，使每一行都有尽可能多的单词，并且使单词与单词之间的空字符合理分布，且每行字符长度不得超过给定长度。</p>
-<p>这道题的总体思路很简单，然而具体实现却又很复杂。</p>
-<p>先说一下大体思路。首先是每一行的单词选择，每一行都由一个或多个单词和空字符组成，且单词必须按原始顺序排列，所以只要不断累加单词和空字符的长度，当累加长度大于给定长度时，则说明最后加入的这个单词不能放入这一行，因此这一行就由最后一个单词前面的单词所组成，同样下一行再通过这样的方式去判断，就可以得出每一行应选择的单词。</p>
-<p>因此判断每行所选择的单词就涉及到了两个条件，一是单词的长度，单词的长度可以通过size函数获取；二是每行空字符的数量，根据题意，单词与单词之间至少有一个空字符，因此判断 <strong>当前累加单词长度+单词数量-1&gt;给定长度</strong> 即可，然后在这个条件判断内部获取前面的单词和进行空字符分配。</p>
-<p>然而，通过上面的方式并不能得到最后一行的单词，<strong>最后一行的单词累加长度+必须的空字符数量&lt;=给定长度</strong>，所以上面那种方法并不适用于最后一行的单词选择。这里可以通过判断 <strong>给定的这一组单词剩余的单词长度+必须的空字符数量&lt;=给定长度</strong> 来选择最后一行的单词，这种方式肯定会增加程序的复杂程度。</p>
-<p>另一种方式很简单，只需要给给定数组push进一个和给定长度相当的任意字符串即可，这样在选择最后一行的单词时，就可以符合上面的条件。</p>
-<pre><code>words.push_back(string(maxWidth, &apos;a&apos;));
-</code></pre><p>在确定好当前行应选择的单词后，就应该将单词push进新数组，同时分配空字符。</p>
-<p>空字符的分配相比较每行单词的选择更为复杂，首先需要知道每行空字符的数量，因为每行字符长度不得超过给定长度，因此 <strong>当前行空字符数量=给定长度-当前行单词累加长度</strong>，然后需要知道每行应分配几处空字符，即空字符应分配的区域有几处，通过例子可以看出，当单词数量为1时，有一处空字符，且空字符在最右边，当单词数量大于1时，空字符数量均匀分布，当不能完全均匀分布时，左边的空字符数量要多于右边，因此：</p>
-<pre><code>k-- &gt; 0 ? 当前位置应分配的空字符数量 = 当前行空字符数量 / 空字符应分配的区域数量 + 1 : 当前位置应分配的空字符数量 = 当前行空字符数量 / 空字符应分配的区域数量;
-str += string(当前位置应分配的空字符数量, &apos; &apos;);
-</code></pre><p>这里的 <strong>k=当前行空字符数量%空字符应分配的区域数量</strong>。</p>
-<p>上面的第一行代码就可以实现空字符的均匀分配，然后通过第二行代码将与该行当前区域应分配的空字符数量相当的空字符写入str中。</p>
-<p><strong>需要注意的是，最后一行并不是按照这个规则来进行空字符分配的。因此，最后一行的空字符需要另外分配</strong>。</p>
-<p>下面是具体实现代码</p>
-<pre><code>class Solution{
-  public:
-        vector&lt;string&gt; fullJustify(vector&lt;string&gt; &amp;words, int maxWidth){
-           vector&lt;string&gt; sum;     //用于返回处理完后的数组
-           int wordsWidth = 0;     //每行单词字符长度
-         int nullCharTotalWidth, nullCharArea, nullCharWidth; //每行空字符总数量，每行空字符区间，每个空字符区间中空字符的数量
-         int start = 0,k,flag=0;     //每次起始点，空字符总数%空字符区间，储存最后一行已用空字符
-         string str = &quot;&quot;;    //每行累加的字符串
-         words.push_back(string(maxWidth, &apos;a&apos;));
-         for (int i = 0; i &lt; words.size(); ++i){
-             wordsWidth += words[i].size();
-             nullCharArea = i - start;
-             if (wordsWidth + nullCharArea &gt; maxWidth){
-                nullCharTotalWidth = maxWidth - wordsWidth + words[i].size();
-                --nullCharArea == 0 ? nullCharArea = 1 : nullCharArea = nullCharArea;
-                k = nullCharTotalWidth % nullCharArea;
-                for (int j = start; j &lt; i; ++j){
-                    str += words[j];
-                    if (i == words.size() - 1){
-                       j &lt; i - 1 ? str += &quot; &quot;: str += string(nullCharTotalWidth - flag, &apos; &apos;);
-                       ++flag;
-                       continue;
-                    }
-                    if ((j == i - 1) &amp;&amp; (start != i - 1))   break;
-                    k-- &gt; 0 ? nullCharWidth = nullCharTotalWidth / nullCharArea + 1 : nullCharWidth = nullCharTotalWidth / nullCharArea;
-                    str += string(nullCharWidth, &apos; &apos;);
-                }
-               sum.push_back(str);
-               str = &quot;&quot;;
-               wordsWidth = 0;
-               start = i--;
-            }
-        }
-        return sum;
-    }
-};
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">Artikel</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-
-          </nav>
-
-          
-
-          <div class="links-of-author motion-element">
-            
-          </div>
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
+</div>
+</div>
 
     </div>
-  </aside>
 
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
-
-  
+    
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">John Doe</a>,
+        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
+                href="http://hexo.io/" target="_blank">Hexo</a>.
+    </div>
+</div>
 
-    
+    </div>
 
-  </div>
 
-  
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
 
+<!-- scripts list from theme config.yml -->
 
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
 
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
 
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
 
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
 
+<script src="/js/semantic-ui-algolia.js"></script>
 
+<script src="/js/aloha-events.js"></script>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
 
 </body>
 </html>
