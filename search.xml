@@ -53,7 +53,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[title:leetcode68. Text JustificationWater]]></title>
+      <title><![CDATA[leetcode68. Text JustificationWater]]></title>
       <url>/2017/10/28/leetcode68-Text-Justification/</url>
       <content type="html"><![CDATA[<p>Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.<br>You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ‘ ‘ when necessary so that each line has exactly L characters.<a id="more"></a><br>Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.<br>For the last line of text, it should be left justified and no extra space is inserted between words.</p>
 <p>For example,<br>words: [“This”, “is”, “an”, “example”, “of”, “text”, “justification.”]<br>L: 16.</p>
