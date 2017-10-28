@@ -1,85 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable"  content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
     
-    <title>leetcode68. Text JustificationWater | Afennnnn</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!--Simple SEO-->
+
+
+<meta name="robots" content=all />
+<meta name="google" content=all />
+<meta name="googlebot" content=all />
+<meta name="verify" content=all />
+    <!--Title-->
+
+<title>leetcode68. Text JustificationWater | Afennnnn</title>
+
+<link rel="alternate" href="/atom.xml" title="Afennnnn" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/pages/post.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/thirdParty/highlight/github.css">
+<link rel="stylesheet" href="/css/pages/comments.css">
+
+    <!--script-->
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>-->
+
+
+<script src="/js/thirdParty/gitment.browser.min.js"></script>
+<script>
+  var labels = "blog,gitment";
+  labels = labels.split(",");
+  var gitment = new Gitment({
+    id: window.location.pathname,
+    owner: "GeekaholicLin",
+    repo: "geekaholiclin.github.io",
+    oauth: {
+      client_id: "aa2215dfc8ee944d1205",
+      client_secret: "77cd2afa5d161bc0ab04639ed81300d808c6e22b"
+    },
+    perPage: "20",
+    labels: labels
+  });
+</script>
+
     
     
-      <link rel="icon" href="/favicon.png">
-    
+</head>
 
-    <link rel="stylesheet" href="/css/style.css">
+<body id="normal">
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<style>
+    header{ top: 71px; position: absolute!important;}
+    #container{padding-top: 151px!important;}
+</style>
+<div style="position:fixed;z-index:9999;left:0;top:0;width:100%;height:70px;background-color:#e0e0e0;color:#396CA5;border-bottom:1px solid #cecece;text-align:center;line-height:70px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
 
-    <link rel="stylesheet" href="/js/google-code-prettify/tomorrow-night-eighties.min.css">
-
-  </head>
-
-  <body>
-
-<header>
-	<a id="logo" href="/" title="Afennnnn">
-	<img src="/favicon.png" alt="Afennnnn"></a>
-	
-	
-		<!--搜索栏-->
-		<i class="js-toggle-search iconfont icon-search"></i>
-
-
-<form class="js-search search-form search-form--modal" method="get" action="http://gushi.li" role="search">
-	<div class="search-form__inner">
-		<div>
-			<i class="iconfont icon-search"></i>
-			<input class="text-input" placeholder="Enter Key..." type="search">
-		</div>
-	</div>
-</form>
-	
-
-	
-		<!--侧边导航栏-->
-		<a id="nav-toggle" href="#"><span></span></a>
-
-<nav>
-	<div class="menu-top-container">
-		<ul id="menu-top" class="menu">
-			
-				
-				<li class="current-menu-item">
-					<a href="http://weibo.com/yumemor/" target="_blank">Weibo</a>
-				</li>
-			
-		</ul>
-	</div>
-</nav>
-	
-
+<div id="wrap">
+    <header  style="position: absolute;" >
+    <div id="site-meta">
+        <a href="/" id="logo">
+            <h1 class="title">Afennnnn</h1>
+        </a>
+        
+    </div>
+    <ul id="nav">
+        
+            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+        
+            <li><a href="/atom.xml"><i class="fa fa-rss"></i>RSS</a></li>
+        
+        <li id="search"><a href="javascript:void(0)"><i class="fa fa-search"></i>搜索</a></li>
+    </ul>
 </header>
-<div class="m-header ">
-	<section id="hero1" class="hero">
-		<div class="inner">
-		</div>
-	</section>
-	
-		<figure class="top-image" data-enable=true></figure>
-	
+
+    <div id="container">
+        
+<ul id="sidebar">
+    
+    
+<li class="widget notification">
+    <i class="fa fa-bell-o"></i>
+    <div>
+        
+<p>主题ylion v0.0.0版本即将上线，敬请期待~！
+主题作者：<a href="https://github.com/GeekaholicLin"
+title="fork me" target="_blank">Geekaholic</a></p>
+    </div>
+</li>
+
+    
+    
+<li class="widget widget-normal category">
+    <h3 class="fa fa-th widget-title">分类</h3>
+    <ul class="category-list"><li class="category-list-item"><a class="category-list-link current" href="/categories/刷题/"><i class="fa" aria-hidden="true">刷题</i></a><span class="category-list-count">3</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal archive">
+  <h3 class="fa fa-archive widget-title">归档</h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/"><i class="fa" aria-hidden="true">October 2017</i></a><span class="archive-list-count">3</span></li></ul>
+</li>
+
+
+    
+    
+<li class="widget widget-normal popular-posts" id="popular-posts">
+    <h3 class="fa fa-thermometer-3 widget-title">热门文章</h3>
+    <ul id="popular-content">
+        <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+    </ul>
+</li>
+
+    
+    
+<li class="widget widget-normal tags">
+  <h3 class="fa fa-tags widget-title">标签云</h3>
+  <div class="tagcloud-content">
+    
+      <a href="/tags/2017百度之星资格赛-1003：度度熊与邪恶大魔王/" style="font-size: 0.14rem; color: #69c">2017百度之星资格赛 1003：度度熊与邪恶大魔王</a> <a href="/tags/leetcode42-Trapping-Rain-Water/" style="font-size: 0.14rem; color: #69c">leetcode42. Trapping Rain Water</a> <a href="/tags/title-leetcode68-Text-Justification/" style="font-size: 0.14rem; color: #69c">title:leetcode68. Text Justification</a>
+  </div>
+</li>
+
+
+    
+    
+<li class="widget widget-normal friends-link">
+    <h3 class="fa fa-globe widget-title">友链</h3><br/>
+
+    
+        <a href="http://geekaholiclin.github.io" class="fa" target="_blank">主题作者</a>
+
+    
+
+</li>
+
+    
+</ul>
+
+
+        <div id="main">
+    <article id="post">
+        <div id="post-header">
+
+            <h1 id="leetcode68. Text JustificationWater">
+                
+                leetcode68. Text JustificationWater
+                
+            </h1>
+            <div class="article-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+            <i class="fa fa-folder-open-o"></i>
+        <span>刷题</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+         <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            title:leetcode68. Text Justification
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta ">2017/10/28</span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+            <i class="fa fa-thermometer-three-quarters"></i>
+        <span class="hits hits-meta " data-leadcloud-title="leetcode68. Text JustificationWater"
+              data-leadcloud-url="/2017/10/28/leetcode68-Text-Justification/"><i class="fa fa-spinner fa-spin"></i></span>
+    </span>
+    
+    
 </div>
 
-<!--文章列表-->
-<div class="wrapper">
-  
-    <!--文章-->
-<article>
-	
-  
-    <h1 class="post-title" itemprop="name">
-      leetcode68. Text JustificationWater
-    </h1>
-  
-
-	<div class='post-body mb'>
-		<p>Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.<br>You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ‘ ‘ when necessary so that each line has exactly L characters.<a id="more"></a><br>Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.<br>For the last line of text, it should be left justified and no extra space is inserted between words.</p>
+            
+            
+        </div>
+        
+        <div id="post-body">
+            <p>Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.<br>You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ‘ ‘ when necessary so that each line has exactly L characters.<a id="more"></a><br>Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.<br>For the last line of text, it should be left justified and no extra space is inserted between words.</p>
 <p>For example,<br>words: [“This”, “is”, “an”, “example”, “of”, “text”, “justification.”]<br>L: 16.</p>
 <p>Return the formatted lines as:</p>
 <pre><code>[
@@ -104,122 +236,171 @@ str += string(当前位置应分配的空字符数量, &apos; &apos;);
 <p>下面是具体实现代码</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>&#123;</span></div><div class="line">  <span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; fullJustify(<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;words, <span class="keyword">int</span> maxWidth)&#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; sum;     <span class="comment">//用于返回处理完后的数组</span></div><div class="line">        <span class="keyword">int</span> wordsWidth = <span class="number">0</span>;     <span class="comment">//每行单词字符长度</span></div><div class="line">        <span class="keyword">int</span> nullCharTotalWidth, nullCharArea, nullCharWidth; <span class="comment">//每行空字符总数量，每行空字符区间，每个空字符区间中空字符的数量</span></div><div class="line">        <span class="keyword">int</span> start = <span class="number">0</span>,k,flag=<span class="number">0</span>;     <span class="comment">//每次起始点，空字符总数%空字符区间，储存最后一行已用空字符</span></div><div class="line">        <span class="built_in">string</span> str = <span class="string">""</span>;    <span class="comment">//每行累加的字符串</span></div><div class="line">        words.push_back(<span class="built_in">string</span>(maxWidth, <span class="string">'a'</span>));</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; words.size(); ++i)&#123;</div><div class="line">            wordsWidth += words[i].size();</div><div class="line">            nullCharArea = i - start;</div><div class="line">            <span class="keyword">if</span> (wordsWidth + nullCharArea &gt; maxWidth)&#123;</div><div class="line">                nullCharTotalWidth = maxWidth - wordsWidth + words[i].size();</div><div class="line">                --nullCharArea == <span class="number">0</span> ? nullCharArea = <span class="number">1</span> : nullCharArea = nullCharArea;</div><div class="line">                k = nullCharTotalWidth % nullCharArea;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = start; j &lt; i; ++j)&#123;</div><div class="line">                    str += words[j];</div><div class="line">                    <span class="keyword">if</span> (i == words.size() - <span class="number">1</span>)&#123;</div><div class="line">                        j &lt; i - <span class="number">1</span> ? str += <span class="string">" "</span>: str += <span class="built_in">string</span>(nullCharTotalWidth - flag, <span class="string">' '</span>);</div><div class="line">                        ++flag;</div><div class="line">                        <span class="keyword">continue</span>;</div><div class="line">                    &#125;</div><div class="line">                    <span class="keyword">if</span> ((j == i - <span class="number">1</span>) &amp;&amp; (start != i - <span class="number">1</span>))   <span class="keyword">break</span>;</div><div class="line">                    k-- &gt; <span class="number">0</span> ? nullCharWidth = nullCharTotalWidth / nullCharArea + <span class="number">1</span> : nullCharWidth = nullCharTotalWidth / nullCharArea;</div><div class="line">                    str += <span class="built_in">string</span>(nullCharWidth, <span class="string">' '</span>);</div><div class="line">                &#125;</div><div class="line">                sum.push_back(str);</div><div class="line">                str = <span class="string">""</span>;</div><div class="line">                wordsWidth = <span class="number">0</span>;</div><div class="line">                start = i--;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> sum;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 
-	</div>
-	<div class="meta split">
-		
-			<span>本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
-		
-		<time class="post-date" datetime="2017-10-27T19:43:25.000Z" itemprop="datePublished">2017-10-28</time>
-	</div>
-</article>
+        </div>
+        <div id="post-footer">
+            <div class="avatar" >
+                <img src="http://example.com/author.jpg" alt="avatar"/>
+                
+                <a href="javascript:void(0)" class="high-song">high起来 &#128541;</a>
+                
+                
+                <a href="javascript:void(0)" class="donate fa">赠我一杯 &#128536;</a>
+                
+            </div>
+            <ul class="author-profile-section">
+                <li>
+                  
+                  作者:
+                  
+                    
+                    <a href="/about.html">muyi</a>
+                </li>
+                
+                <li>发表日期: <span>2017-10-28  03:43:25</span></li>
+                
+                <li>最后编辑日期: <span>2017-10-29  04:41:41</span></li>
+                
+                <li class="post-category">
+                    文章分类:
+                    
+                    <a href="/categories/刷题/">刷题</a>
+                    
+                </li>
+                <li class="post-tags">
+                    文章标签:
+                    
+                    <a href="/tags/title-leetcode68-Text-Justification/">title:leetcode68. Text Justification</a>
+                    
+                </li>
+                
+                <li> 版权声明: <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">
+知识共享署名-非商业性使用-禁止演绎 3.0 未本地化版本许可协议（CC BY-NC-ND 3.0）
+</a></li>
+                
+            </ul>
+            <div id="donate-wrap">
+                
+                
+                
+                <img src="http://example.com/alipay.jpg" alt="支付宝付款" class="donate-img">
+                
+                <img src="http://example.com/wechat.png" alt="微信付款" class="donate-img">
+                
+                
+            </div>
+        </div>
+    </article>
+    <div class="article-nav">
+        
+        <a href="/2017/10/28/leetcode42-Trapping-Rain-Water/" class="pre-post fa fa-caret-left">leetcode42. Trapping Rain Water</a>
+        
+        
+    </div>
+    
+    <div id="comments">
+        
 
-<!--评论-->
-
-	
-<div class="ds-thread" data-thread-key="leetcode68-Text-Justification" data-title="leetcode68. Text JustificationWater" data-url="https://spideraini.github.io/2017/10/28/leetcode68-Text-Justification/"></div>
-<script type="text/javascript">
-
-var duoshuoQuery = {short_name:"yumemor"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0]
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
+<script>
+  gitment.render(document.getElementById("comments"));
 </script>
 
 
-  
+
+    </div>
+    
 </div>
 
 
-  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
-    <path d="M0 0 L50 100 L100 0 Z"></path>
-  </svg>
-
-  
-
-
-  <div class="wrapper"></div>
-
-
-
-
-
-<div class="fat-footer">
-	<div class="wrapper">
-		<div class="layout layout--center">
-			<div class="layout__item palm-mb">
-				<div class="media">
-					<img class="headimg" src='http://oct8d1mqf.bkt.clouddn.com/2016-10-17-15%3A42%3A28.jpg' alt='muyi'>
-					<div class="media__body">
-						<h4>Afennnnn</h4>
-						<p class='site-description'></p>
-					</div>
-				</div>
-				<div class="author-contact">
-					<ul>
-						
-							
-							<li>
-				        		<a href="http://weibo.com/yumemor/" target="_blank">
-				        			
-				        				<i class="iconfont icon-weibo"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-							
-							<li>
-				        		<a href="https://github.com/yumemor" target="_blank">
-				        			
-				        				<i class="iconfont icon-github"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-							
-							<li>
-				        		<a href="https://www.zhihu.com/people/yumemor" target="_blank">
-				        			
-										<i class="iconfont icon-zhihu"></i>
-				        			
-				        		</a>
-				        	</li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<footer class="footer" role="contentinfo">
-	<div class="wrapper wrapper--wide split split--responsive">
-		
-			<span>本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次</span>
-		
-		<span>Theme by <a href="http://github.com/yumemor">Yumemor</a>. Powered by <a href="http://hexo.io">Hexo</a></span>
-	</div>
+    </div>
+    <footer id="footer">
+    
+    <div class="social">
+        
+        <a href="https://www.example1.com" class="fa fa-free-code-camp" target="_blank" title="freecodecamp"></a>
+        
+        <a href="https://www.example2.com" class="fa fa-github" target="_blank" title="Follow me~"></a>
+        
+    </div>
+    
+    <div>
+        
+        <a href="/" class="copyright-links">muyi</a>&copy;2015 - 2017.All Rights
+        Reserved.
+    </div>
+    <p>Powered by <a href="https://hexo.io" class="copyright-links" target="_blank">Hexo</a> | Theme by <a
+                href="https://github.com/GeekaholicLin" class="copyright-links" target="_blank">GeekaholicLin</a>
+    </p>
+    
+    
+    <p>
+        <span id="busuanzi_container_site_uv" class="fa fa-bar-chart">
+        欢迎第<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>位小伙伴~
+        </span>
+    </p>
+    
 </footer>
 
-	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
-	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
-	<script src="/js/lib.js"></script>
-	<script src="/js/google-code-prettify/prettify.js"></script>
-	<script src="/js/module.js"></script>
-	<script src="/js/script.js"></script>
-	
-		<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	
-	<script type='text/javascript'>
-		//代码高亮
-		$(document).ready(function(){
-	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-   			prettyPrint();
-		});
-	</script>
-	</body>
+</div>
+    <ul id="tools">
+    <li class="totop-btn fa fa-angle-up"></li>
+    <li class="exchange-btn fa fa-exchange"></li>
+  
+    <li class="toc-btn fa fa-list-ul"></li>
+    
+    
+
+    
+    <li class="comment-btn fa fa-comments-o">
+        <a href="#comments" title="comments"></a>
+    </li>
+    
+</ul>
+<p id="process"></p>
+<div id="search-overlay">
+    <div class="search-area-wrap">
+        <div id="search-area">
+            <div class="input-wrap focus">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input id="search-input" autofocus autocomplete="off" type="text"
+                       placeholder="search this website..."/>
+            </div>
+            <ul id="search-result">
+                <li class="load-first"><i class="fa fa-spinner fa-pulse"></i></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    
+
+
+    <script src="/js/highsong.js"></script>
+
+
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+    //theme config datas
+    var copyrightObj = {};
+    copyrightObj.enable = 'true';
+    copyrightObj.triggerCopyLength = '200';
+    copyrightObj.appendText = '商业转载请联系作者获得授权,非商业转载请注明出处 © example';
+    var leancloudObj = {};
+    leancloudObj.enable = 'true';
+    leancloudObj.className = 'BlogCounter';
+    leancloudObj.limits = '10';
+</script>
+<script type="text/javascript">
+    var search = {};
+    var search_path = "search.xml";
+    if (!search_path) {
+        search_path = "search.xml";
+    }
+    search.path = "/" + search_path;
+    search.func =  _ajax.init();
+</script>
+<script src="/js/app.js"></script>
+
+
+</body>
 </html>
