@@ -1,279 +1,94 @@
-
-
-<!DOCTYPE html>
-<html lang="">
-<!--begin head-->
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="utf-8">
-<!--begin title-->
-
-<title>
-    
-    leetcode68. Text JustificationWater |
-    
-    Afennnnn</title>
-<!--end title-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--begin mete-->
-
-<meta name="author" content="muyi"/>
-
-<!--end mete-->
-<!--begin keywords-->
-<meta name="keywords" content="2017百度之星资格赛 1003：度度熊与邪恶大魔王,leetcode42. Trapping Rain Water,title:leetcode68. Text Justification"/>
-<!--end keywords-->
-<!--begin rss-->
-
-<link rel="alternate" href="/atom.xml" title="Afennnnn" type="application/atom+xml">
-
-<!--end rss-->
-<!--begin favicon-->
-
-<link rel="icon" href="/fav.ico">
-
-<!--end favicon-->
-<!--begin style-->
-
-<!-- stylesheets list from config.yml -->
-
-<link rel="stylesheet" href="/css/hannah.css">
-
-
-<!--end style-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>leetcode68. Text JustificationWater</title>
+  <meta name="author" content="muyi">
+  <meta name="description" content="Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ‘ ‘ when necessary so that each line has exactly L characters.">
+  
+  
+  <meta property="og:title" content="leetcode68. Text JustificationWater"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="Afennnnn"/>
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+  <link rel="alternate" href="/atom.xml" title="Afennnnn" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
-<!--end head-->
-<!--begin body-->
-<body class="container-fluid">
 
-<!--begin menu-->
-<div class="hannah-menu">
-    <i class="fh fh-ravelry fa-2x btn fixed-menu animated bounce" id="btn_menu" aria-hidden="true"></i>
-    <div class="menu-outer container-fluid hide animated" id="div_menu">
-        <div class="row" style="margin-bottom: 5px;">
-            
-            <div class="col-md-offset-2 col-md-3 col-xs-4 text-center left-social">
-                
-                <a target="_blank" href="https://github.com/objectyan" title="GitHub"><i class="fh fh-github"></i></a>
-                
-                <style>
-                    .left-social {
-                        height: 132px;
-                        line-height: 132px;
-                        font-size: 66px;
-                    }
-
-                    .left-social * {
-                        color: #f1ce8e;
-                    }
-
-                    @media (max-width: 767px) {
-                        .left-social {
-                            line-height: 132px;
-                            font-size: 33px;
-                        }
-                    }
-                </style>
-            </div>
-            <!--begin handImg-->
-            <div class="col-md-2 col-xs-4 text-center">
-                
-                <img src="/img/logo.jpg" alt="Head Image" class="img-circle">
-                
-            </div>
-            <!--end handImg-->
-            <div class="col-md-3 col-xs-4 text-center right-social">
-                
-                <style>
-                    .right-social {
-                        height: 132px;
-                        line-height: 132px;
-                        font-size: 66px;
-                    }
-
-                    @media (max-width: 767px) {
-                        .right-social {
-                            line-height: 132px;
-                            font-size: 33px;
-                        }
-                    }
-
-                    .right-social * {
-                        color: #f1ce8e;
-                    }
-                </style>
-            </div>
-        </div>
-        <div class="row">
-            <div class="menu-content col-md-8 col-md-push-2 col-xs-12 ">
-                <dl class="menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-bars" aria-hidden="true"></i> Menu
-                    </dt>
-                    <dd class="menu-content-content">
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/" class="btn btn-block">
-                                
-                                <i class="fh fh-ravelry"></i>
-                                Home
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/categories" class="btn btn-block">
-                                
-                                <i class="fh fh-cubes"></i>
-                                Category
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/tags" class="btn btn-block">
-                                
-                                <i class="fh fh-tags"></i>
-                                Tag
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/archives" class="btn btn-block">
-                                
-                                <i class="fh fh-archive"></i>
-                                Archives
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/about" class="btn btn-block">
-                                
-                                <i class="fh fh-about"></i>
-                                About
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/doc" class="btn btn-block">
-                                
-                                <i class="fh fh-document"></i>
-                                Doc
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/plug" class="btn btn-block">
-                                
-                                <i class="fh fh-plug"></i>
-                                Plug
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/sitemap" class="btn btn-block">
-                                
-                                <i class="fh fh-sitemap"></i>
-                                SiteMap
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/atom.xml" class="btn btn-block">
-                                <i class="fh fh-rss" aria-hidden="true"></i> RSS
-                            </a>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <div class="row">
-            <div class="menu-content col-md-8 col-md-offset-2 col-xs-12 ">
-                <dl class="col-md-6 col-xs-6 menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-cubes" aria-hidden="true"></i> Category
-                    </dt>
-                    <dd class="menu-content-content animated zoomIn">
-                        <ul class="menu-cate-list"><li class="menu-cate-list-item"><a class="menu-cate-list-link" href="/categories/刷题/"><i class="fh fh-cube" aria-hidden="true"></i> 刷题</a><span class="menu-cate-list-count">3</span></li></ul>
-                    </dd>
-                </dl>
-                <dl class="col-md-6 col-xs-6 menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-tag" aria-hidden="true"></i> Tags
-                    </dt>
-                    <dd class="menu-content-content animated zoomIn">
-                        <ul class="menu-tag-list"><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/2017百度之星资格赛-1003：度度熊与邪恶大魔王/"><i class="fh fh-tag" aria-hidden="true"></i> 2017百度之星资格赛 1003：度度熊与邪恶大魔王</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/leetcode42-Trapping-Rain-Water/"><i class="fh fh-tag" aria-hidden="true"></i> leetcode42. Trapping Rain Water</a><span class="menu-tag-list-count">1</span></li><li class="menu-tag-list-item"><a class="menu-tag-list-link" href="/tags/title-leetcode68-Text-Justification/"><i class="fh fh-tag" aria-hidden="true"></i> title:leetcode68. Text Justification</a><span class="menu-tag-list-count">1</span></li></ul>
-                    </dd>
-                </dl>
-            </div>
-        </div>
+<body>
+  <a id="top"></a>
+  <div id="main">
+    <div class="behind">
+      <a href="/" class="back black-color">
+        <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+        </svg>
+      </a>
+      <div class="description">
+        &nbsp;
+      </div>
     </div>
-</div>
-<!--end menu-->
+    <div class="container">
+      
 
-<div class="row hannah-body">
-    <div class="col-md-8 col-md-push-2 col-xs-12">
-        <!--begin breadcrumb-->
-        <div class="bread-crumb">
-    <ul class="bread-crumb-menu animated rubberBand">
-        <li><a href="/"><i class="fh fh-ravelry" aria-hidden="true"></i> Home</a></li>
-        
-        <li><a href="/categories/刷题/"><i class="fh fh-cube" aria-hidden="true"></i> 刷题</a>
-        </li>
-        
-        <li>
-            
-            <i class="fh fh-newspaper-o" aria-hidden="true"></i>
-            
-            leetcode68. Text JustificationWater
-        </li>
-        
-    </ul>
-    <div class="bread-crumb-search">
-        <div class="search">
-    <i class="fh fh-search icon-search"></i>
-    <input placeholder="Search ..." onkeyup="searchFunc(this,event,'/search.xml')"
-           class="input-search animated fadeInRight"/>
-    <div class="search-result animated fadeInRight">
-        <a class="animated tada col-lg-12 search-result-item result-link" href="/2017/10/28/2017百度之星资格赛-1003：度度熊与邪恶大魔王/">2017百度之星资格赛 1003：度度熊与邪恶大魔王</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2017/10/28/leetcode42-Trapping-Rain-Water/">leetcode42. Trapping Rain Water</a><a class="animated tada col-lg-12 search-result-item result-link" href="/2017/10/28/leetcode68-Text-Justification/">leetcode68. Text JustificationWater</a>
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        leetcode68. Text JustificationWater
+    </h1>
+  
+
+
     </div>
-</div>
-    </div>
-</div>
-        <!--end breadcrumb-->
-        <article class="post animated rollIn">
-    <h1 class="post-title">leetcode68. Text JustificationWater</h1>
-    <div class="post-subtitle">
-        
-        <time datetime="2017-10-27T19:43:25.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2017-10-28
-        </time>
-        
-        
-        <span class="item">
-      <i class="fh fh-cubes" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-primary tags" href="/categories/刷题/">
-           <i class="fh fh-cube" aria-hidden="true"></i>&nbsp;刷题
-        </a>
-            
-        </span>
-        
-        
-        <span class="item">
-        <i class="fh fh-tags" aria-hidden="true"></i>&nbsp;
-            
-            <a class="label label-info tags" href="/tags/title-leetcode68-Text-Justification/">
-            <i class="fh fh-tag" aria-hidden="true"></i>&nbsp;title:leetcode68. Text Justification
-            </a>
-            
-        </span>
-        
-    </div>
+    <div class="meta center">
+      
+<time datetime="2017-10-27T19:43:25.000Z">
+<svg class="i-calendar" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
+  </svg>
+  &nbsp;
+  2017-10-28
+</time>
+
+
+
     
-    <blockquote>
-        <p><strong><em>简介</em></strong><br></p>
-        <p>Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.<br>You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ‘ ‘ when necessary so that each line has exactly L characters.
-    </blockquote>
+    &nbsp;
+    <svg class="i-tag" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <circle cx="24" cy="8" r="2"></circle>
+      <path d="M2 18 L18 2 30 2 30 14 14 30 Z"></path>
+    </svg>
+    &nbsp;
+    <a href="/categories/刷题/">刷题</a>
+
+
+
+
     
-    <a id="more"></a><br>Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.<br>For the last line of text, it should be left justified and no extra space is inserted between words.</p>
+    &nbsp;
+    <svg class="i-tag" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <circle cx="24" cy="8" r="2"></circle>
+      <path d="M2 18 L18 2 30 2 30 14 14 30 Z"></path>
+    </svg>
+    &nbsp;
+    <a href="/tags/title-leetcode68-Text-Justification/">title:leetcode68. Text Justification</a>
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <p>Given an array of words and a length L, format the text such that each line has exactly L characters and is fully (left and right) justified.<br>You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces ‘ ‘ when necessary so that each line has exactly L characters.<a id="more"></a><br>Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.<br>For the last line of text, it should be left justified and no extra space is inserted between words.</p>
 <p>For example,<br>words: [“This”, “is”, “an”, “example”, “of”, “text”, “justification.”]<br>L: 16.</p>
 <p>Return the formatted lines as:</p>
 <pre><code>[
@@ -298,61 +113,63 @@ str += string(当前位置应分配的空字符数量, &apos; &apos;);
 <p>下面是具体实现代码</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>&#123;</span></div><div class="line">  <span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; fullJustify(<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;words, <span class="keyword">int</span> maxWidth)&#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; sum;     <span class="comment">//用于返回处理完后的数组</span></div><div class="line">        <span class="keyword">int</span> wordsWidth = <span class="number">0</span>;     <span class="comment">//每行单词字符长度</span></div><div class="line">        <span class="keyword">int</span> nullCharTotalWidth, nullCharArea, nullCharWidth; <span class="comment">//每行空字符总数量，每行空字符区间，每个空字符区间中空字符的数量</span></div><div class="line">        <span class="keyword">int</span> start = <span class="number">0</span>,k,flag=<span class="number">0</span>;     <span class="comment">//每次起始点，空字符总数%空字符区间，储存最后一行已用空字符</span></div><div class="line">        <span class="built_in">string</span> str = <span class="string">""</span>;    <span class="comment">//每行累加的字符串</span></div><div class="line">        words.push_back(<span class="built_in">string</span>(maxWidth, <span class="string">'a'</span>));</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; words.size(); ++i)&#123;</div><div class="line">            wordsWidth += words[i].size();</div><div class="line">            nullCharArea = i - start;</div><div class="line">            <span class="keyword">if</span> (wordsWidth + nullCharArea &gt; maxWidth)&#123;</div><div class="line">                nullCharTotalWidth = maxWidth - wordsWidth + words[i].size();</div><div class="line">                --nullCharArea == <span class="number">0</span> ? nullCharArea = <span class="number">1</span> : nullCharArea = nullCharArea;</div><div class="line">                k = nullCharTotalWidth % nullCharArea;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = start; j &lt; i; ++j)&#123;</div><div class="line">                    str += words[j];</div><div class="line">                    <span class="keyword">if</span> (i == words.size() - <span class="number">1</span>)&#123;</div><div class="line">                        j &lt; i - <span class="number">1</span> ? str += <span class="string">" "</span>: str += <span class="built_in">string</span>(nullCharTotalWidth - flag, <span class="string">' '</span>);</div><div class="line">                        ++flag;</div><div class="line">                        <span class="keyword">continue</span>;</div><div class="line">                    &#125;</div><div class="line">                    <span class="keyword">if</span> ((j == i - <span class="number">1</span>) &amp;&amp; (start != i - <span class="number">1</span>))   <span class="keyword">break</span>;</div><div class="line">                    k-- &gt; <span class="number">0</span> ? nullCharWidth = nullCharTotalWidth / nullCharArea + <span class="number">1</span> : nullCharWidth = nullCharTotalWidth / nullCharArea;</div><div class="line">                    str += <span class="built_in">string</span>(nullCharWidth, <span class="string">' '</span>);</div><div class="line">                &#125;</div><div class="line">                sum.push_back(str);</div><div class="line">                str = <span class="string">""</span>;</div><div class="line">                wordsWidth = <span class="number">0</span>;</div><div class="line">                start = i--;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> sum;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 
-</article>
 
-<div class="animated bounceInDown paginations">
-    <div class="col-md-8 col-md-push-2 col-xs-12">
-        <nav>
-            
-            <a href="/2017/10/28/leetcode42-Trapping-Rain-Water/" class="prev col-md-2 col-xs-4 text-left">&larr; Prev</a>
-            
-            <span class="page-content col-md-8  col-xs-4 text-center">
-                
-            </span>
-            
-        </nav>
-        <div>
-            <div class="col-md-6 col-xs-6 text-left">
-                
-                leetcode42. Trapping Rain Water
-                
-            </div>
-            <div class="col-md-6 col-xs-6 text-right">
-                
-            </div>
-        </div>
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    page PV:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    site PV:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    site UV:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" target="_self">
+        <svg class="i-caret-right" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M10 30 L26 16 10 2 Z"></path>
+        </svg>
+        </a>
+        © XXX 20xx-2017
+    </div>
+    <div class="secondrow">
+        <a href="https://github.com/gaoryrt/hexo-theme-pln">
+        Theme Pln
+        </a>
     </div>
 </div>
-
-        <!--begin comments-->
-        
-<div class="comments" id="comments">
-    
-
+<div class="clearfix">
 </div>
-
-
-        <!--end comments-->
-    </div>
-</div>
-
-<!--begin footer-->
-<footer id="footer" class="footer animated fadeInUp hide">
-    <p><i class="copy">&copy;</i> 2017 <a href="https://spideraini.github.io">muyi</a> All Right Reserved.</p>
-    <p>Powered by <a href="http://hexo.io">Hexo</a>. Theme by <a href="https://github.com/objectyan/hexo-theme-hannah">hannah</a></p>
 </footer>
-<!--end footer-->
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="/js/search.min.js"></script>
+<script type="text/javascript">
+
+// disqus scripts
 
 
-<!-- scripts list from theme config.yml -->
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
 
-<script src="/js/hannah.js"></script>
+var path = "/search.xml";
+searchFunc(path, 'local-search-input', 'local-search-result');
 
+</script>
 
-<!--begin analytics-->
-
-
-<!--end analytics-->
 </body>
-<!--end body-->
 </html>
