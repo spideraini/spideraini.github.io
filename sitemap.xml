@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://spideraini.github.io/tags.html</loc>
-    
-    <lastmod>2017-10-29T00:35:37.690Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://spideraini.github.io/2017/10/28/leetcode42-Trapping-Rain-Water/</loc>
     
     <lastmod>2017-10-29T00:29:10.160Z</lastmod>
