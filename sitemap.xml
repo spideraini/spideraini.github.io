@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://spideraini.github.io/categories/index.html</loc>
+    
+    <lastmod>2017-10-29T04:39:21.988Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://spideraini.github.io/tags/index.html</loc>
+    
+    <lastmod>2017-10-29T04:38:36.612Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://spideraini.github.io/2017/10/28/leetcode68-Text-Justification/</loc>
     
     <lastmod>2017-10-29T04:31:43.226Z</lastmod>
