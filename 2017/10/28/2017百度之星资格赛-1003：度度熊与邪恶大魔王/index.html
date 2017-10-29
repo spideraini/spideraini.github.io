@@ -1,333 +1,465 @@
-<!DOCTYPE html>
-<html>
+
+ <!DOCTYPE HTML>
+<html >
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   
-  <title>2017百度之星资格赛 1003：度度熊与邪恶大魔王 | Afennnnn</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Problem:度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。当然，如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，当然如果伤害小于防御，那么攻击就不会奏效。如果怪兽的生命值降为0">
+    <title>2017百度之星资格赛 1003：度度熊与邪恶大魔王 | Afennnnn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="muyi">
+    
+
+    
+    <meta name="description" content="Problem:度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，当然如果伤害小于防御，那么攻击就不会奏效。怪兽的生命值降为0或以下，那">
 <meta name="keywords" content="2017百度之星资格赛 1003：度度熊与邪恶大魔王">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2017百度之星资格赛 1003：度度熊与邪恶大魔王">
 <meta property="og:url" content="http://yoursite.com/2017/10/28/2017百度之星资格赛-1003：度度熊与邪恶大魔王/index.html">
 <meta property="og:site_name" content="Afennnnn">
-<meta property="og:description" content="Problem:度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。当然，如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，当然如果伤害小于防御，那么攻击就不会奏效。如果怪兽的生命值降为0">
-<meta property="og:updated_time" content="2017-10-28T15:44:13.473Z">
+<meta property="og:description" content="Problem:度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，当然如果伤害小于防御，那么攻击就不会奏效。怪兽的生命值降为0或以下，那">
+<meta property="og:updated_time" content="2017-10-29T00:28:55.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2017百度之星资格赛 1003：度度熊与邪恶大魔王">
-<meta name="twitter:description" content="Problem:度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。当然，如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，当然如果伤害小于防御，那么攻击就不会奏效。如果怪兽的生命值降为0">
-  
-    <link rel="alternate" href="/atom.xml" title="Afennnnn" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+<meta name="twitter:description" content="Problem:度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，当然如果伤害小于防御，那么攻击就不会奏效。怪兽的生命值降为0或以下，那">
 
+    
+    <link rel="alternative" href="/atom.xml" title="Afennnnn" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Afennnnn" title="Afennnnn"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Afennnnn">Afennnnn</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-    <div id="header-inner" class="inner">
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">首页</a>
-        
-          <a class="main-nav-link" href="/archives">归档</a>
-        
-          <a class="main-nav-link" href="/about">关于</a>
-        
-      </nav>
-      
-    </div>
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Afennnnn</a>
-      </h1>
-      
-    </div>
-  </div>
+      <a href="/2017/10/28/2017百度之星资格赛-1003：度度熊与邪恶大魔王/" title="2017百度之星资格赛 1003：度度熊与邪恶大魔王" itemprop="url">2017百度之星资格赛 1003：度度熊与邪恶大魔王</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="muyi" target="_blank" itemprop="author">muyi</a>
+		
+  <p class="article-time">
+    <time datetime="2017-10-28T15:43:25.000Z" itemprop="datePublished"> Published 2017-10-28</time>
+    
+  </p>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-2017百度之星资格赛-1003：度度熊与邪恶大魔王" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/28/2017百度之星资格赛-1003：度度熊与邪恶大魔王/" class="article-date">
-  <time datetime="2017-10-28T15:43:25.000Z" itemprop="datePublished">2017-10-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p><strong>Problem:</strong><br>度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。<br>邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。<br>度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。<br>如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，当然如果伤害小于防御，那么攻击就不会奏效。<br>怪兽的生命值降为0或以下，那么怪兽就会被消灭。<br>每个技能都可以使用无限次。<br>请问度度熊最少携带多少晶石，就可以消灭所有的怪兽。</p>
+<p><strong>Input:</strong><br>本题包含若干组测试数据。<br>第一行两个整数n，m,表示有n个怪兽，m种技能。<br>接下来n行，每行两个整数，a[i],b[i]，分别表示怪兽的生命值和防御力。<br>再接下来m行，每行两个整数k[i]和p[i]，分别表示技能的消耗晶石数目和技能的伤害值。</p>
+<p><strong>数据范围:</strong><br>1&lt;=n&lt;=100000<br>1&lt;=m&lt;=1000<br>1&lt;=a[i]&lt;=1000<br>0&lt;=b[i]&lt;=10<br>0&lt;=k[i]&lt;=100000<br>0&lt;=p[i]&lt;=1000</p>
+<p><strong>Output:</strong><br>对于每组测试数据，输出最小的晶石消耗数量，如果不能击败所有的怪兽，输出-1<br>-<br>Sample Input<br>1 2<br>3 5<br>7 10<br>6 8<br>1 2<br>3 5<br>10 7<br>8 6<br>Sample Out<br>6<br>18</p>
+<p>问题如上。<br>关于这道题，网上大多采用的是完全背包求解，这里我用了另外一种方法——穷举。。。<br>对于每个怪兽来说，所有的技能只有三种情况：<br>1.<strong>技能攻击力 &lt;= 怪兽防御力</strong>，此类技能无法对怪兽造成伤害，因此可以直接跳过；<br>2.<strong>攻击力 &gt;= 防御力 + 怪兽生命值</strong>，此类技能可以对怪兽一击秒杀，因此只需在此类技能中选择耗费晶石最少的技能即可；<br>3.<strong>攻击力 &gt; 防御力 &amp;&amp; 攻击力 &lt; 防御力 + 生命值</strong>，此类技能无法对怪兽一击秒杀，但可以造成伤害，因此需要多个技能组合起来杀死怪兽。<br>这道题的难点在于第三种情况的技能该如何选择。<br>首先，虽然每个技能可以无限次使用，但对于每个符合第三种情况的技能，当 <strong>使用次数 &gt; 怪兽的生命值/（攻击力 - 防御力）+ 1</strong> 时，再使用此技能没有意义，因为之前的技能累加起来的伤害值已经足够把怪兽打死了。<br>所以可以建立一个新数组，数组中储存符合第三种情况的技能，并且每个技能重复 <strong>生命值/（攻击力 - 防御力）+ 1</strong> 次，该数组的总长度也可以计算出来，这里先记为 <strong>length</strong> 。<br>因此对于新数组中的每一项来说，就只有选和不选两种情况，<strong>如果用0代表不选，用1代表选，那么用 1～pow(2,length) - 1 这之间数字的二进制形式就可以表示出来所有情况</strong>。<br>对于每一种情况，即每个数字的二进制形式，只需找出含1的位置，因为二进制形式的每个位置都与此前建立的新数组对应，因此就可以得到当前情况的技能选择，从而可以求出这种情况造成的伤害值和耗费的晶石数量。<br>若当前伤害值不超过怪兽的生命值，则可以跳过这次情况；若当前耗费晶石数量大于一开始的第二种情况（攻击力 &gt;= 防御力 + 生命值），也可以跳过这次情况。所以只需在剩下的情况中选择耗费晶石数量最少的情况即可。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a, b) (a) &lt; (b) ? (a) : (b)</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span></span></div><div class="line"><span class="class">&#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function"><span class="keyword">int</span> <span class="title">dudubear</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; life, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; defense, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; star, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; attack, <span class="keyword">int</span> n, <span class="keyword">int</span> m)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">int</span> rightMinValue = <span class="number">100000</span>, leftMinValue = <span class="number">100000</span>, sum = <span class="number">0</span>;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; selectValue;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; newselectValue;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m; ++j)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span> (attack[j] &gt;= life[i] + defense[i])</div><div class="line">                &#123;</div><div class="line">                    rightMinValue = min(star[j], rightMinValue);</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> ((attack[j] &gt; defense[i]) &amp;&amp; (attack[j] &lt; defense[i] + life[i]))</div><div class="line">                &#123;</div><div class="line">                    selectValue.push_back(j);</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (j == m - <span class="number">1</span>)</div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="comment">//因为技能可重复使用，但单个技能重复使用累加起来的伤害（攻击-防御）超过怪兽的生命值时无意义</span></div><div class="line">            <span class="comment">//所以每个技能的使用次数不能超过(life[i] / (attack[selectValue[j]] - defense[i]))+1</span></div><div class="line">            <span class="comment">//建立新数组，储存单个技能使用最大次数的数组</span></div><div class="line">            <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; selectValue.size(); ++j)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">int</span> items = (life[i] / (attack[selectValue[j]] - defense[i])) + <span class="number">1</span>;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; items; ++k)</div><div class="line">                &#123;</div><div class="line">                    newselectValue.push_back(selectValue[j]);</div><div class="line">                    ++count;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">			<span class="keyword">int</span> flag = <span class="number">4</span>;</div><div class="line">            <span class="keyword">int</span> bitcount = <span class="number">2</span>;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">3</span>; j &lt; (<span class="keyword">int</span>)<span class="built_in">pow</span>(<span class="number">2</span>, count); ++j)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span> (j == flag)</div><div class="line">                &#123;</div><div class="line">                    flag = flag &lt;&lt; <span class="number">1</span>;</div><div class="line">                    ++bitcount;</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="comment">//计算当前情况所耗费晶石数量</span></div><div class="line">                <span class="keyword">int</span> sumDamage = <span class="number">0</span>, sumStar = <span class="number">0</span>;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt; bitcount + <span class="number">1</span>; ++k)</div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">if</span> ((j &gt;&gt; (k - <span class="number">1</span>) &amp; <span class="number">1</span>) == <span class="number">1</span>)</div><div class="line">                    &#123;</div><div class="line">                        sumDamage += attack[newselectValue[count - k]] - defense[i];</div><div class="line">                        sumStar += star[newselectValue[count - k]];</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (sumDamage &lt; life[i])</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                <span class="keyword">if</span> (sumStar &gt; rightMinValue)</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                leftMinValue = min(sumStar, leftMinValue);</div><div class="line">            &#125;</div><div class="line">            leftMinValue == <span class="number">100000</span> ? sum += rightMinValue : sum += leftMinValue;</div><div class="line">            leftMinValue = <span class="number">100000</span>;</div><div class="line">            rightMinValue = <span class="number">100000</span>;</div><div class="line">            selectValue.clear();</div><div class="line">            newselectValue.clear();</div><div class="line">        &#125;</div><div class="line">		<span class="keyword">return</span> sum;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
   
-    <h1 class="article-title" itemprop="name">
-      2017百度之星资格赛 1003：度度熊与邪恶大魔王
-    </h1>
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
   
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <p><strong>Problem:</strong><br><br><br>度度熊为了拯救可爱的公主，于是与邪恶大魔王战斗起来。<br><br><br>邪恶大魔王的麾下有n个怪兽，每个怪兽有a[i]的生命值，以及b[i]的防御力。<br><br><br>度度熊一共拥有m种攻击方式，第i种攻击方式，需要消耗k[i]的晶石，造成p[i]点伤害。<br><br><br>当然，如果度度熊使用第i个技能打在第j个怪兽上面的话，会使得第j个怪兽的生命值减少p[i]-b[j]，<br><br><br>当然如果伤害小于防御，那么攻击就不会奏效。<br><br><br>如果怪兽的生命值降为0或以下，那么怪兽就会被消灭。<br><br><br>当然每个技能都可以使用无限次。<br><br><br>请问度度熊最少携带多少晶石，就可以消灭所有的怪兽。<br></p>
-<p><strong>Input:</strong><br><br>本题包含若干组测试数据。<br><br><br>第一行两个整数n，m,表示有n个怪兽，m种技能。<br><br><br>接下来n行，每行两个整数，a[i],b[i]，分别表示怪兽的生命值和防御力。<br><br><br>再接下来m行，每行两个整数k[i]和p[i]，分别表示技能的消耗晶石数目和技能的伤害值。<br><br></p>
-<p><strong>数据范围:</strong><br><br><br>1&lt;=n&lt;=100000<br><br>1&lt;=m&lt;=1000<br><br>1&lt;=a[i]&lt;=1000<br><br>0&lt;=b[i]&lt;=10<br><br>0&lt;=k[i]&lt;=100000<br><br>0&lt;=p[i]&lt;=1000<br></p>
-<p><strong>Output:</strong><br><br>对于每组测试数据，输出最小的晶石消耗数量，如果不能击败所有的怪兽，输出-1<br>-</p>
-<p>Sample Input<br><br>1 2<br><br>3 5<br><br>7 10<br><br>6 8<br><br>1 2<br><br>3 5<br><br>10 7<br><br>8 6</p>
-<p>Sample Out<br><br>6<br>18</p>
-<p>问题如上。<br><br>关于这道题，网上大多采用的是完全背包求解，这里我用了另外一种方法——穷举。。。<br><br>对于每个怪兽来说，所有的技能只有三种情况：<br><br>1.<strong>技能攻击力 &lt;= 怪兽防御力</strong>，此类技能无法对怪兽造成伤害，因此可以直接跳过；<br><br>2.<strong>攻击力 &gt;= 防御力 + 怪兽生命值</strong>，此类技能可以对怪兽一击秒杀，因此只需在此类技能中选择耗费晶石最少的技能即可；<br><br>3.<strong>攻击力 &gt; 防御力 &amp;&amp; 攻击力 &lt; 防御力 + 生命值</strong>，此类技能无法对怪兽一击秒杀，但可以造成伤害，因此需要多个技能组合起来杀死怪兽。<br><br>这道题的难点在于第三种情况的技能该如何选择。<br><br>首先，虽然每个技能可以无限次使用，但对于每个符合第三种情况的技能，当 <strong>使用次数 &gt; 怪兽的生命值/（攻击力 - 防御力）+ 1</strong> 时，再使用此技能没有意义，因为之前的技能累加起来的伤害值已经足够把怪兽打死了。<br><br>所以可以建立一个新数组，数组中储存符合第三种情况的技能，并且每个技能重复 <strong>生命值/（攻击力 - 防御力）+ 1</strong> 次，该数组的总长度也可以计算出来，这里先记为 <strong>length</strong> 。<br><br>因此对于新数组中的每一项来说，就只有选和不选两种情况，<strong>如果用0代表不选，用1代表选，那么用 1～pow(2,length) - 1 这之间数字的二进制形式就可以表示出来所有情况</strong>。<br><br>对于每一种情况，即每个数字的二进制形式，只需找出含1的位置，因为二进制形式的每个位置都与此前建立的新数组对应，因此就可以得到当前情况的技能选择，从而可以求出这种情况造成的伤害值和耗费的晶石数量。<br><br>若当前伤害值不超过怪兽的生命值，则可以跳过这次情况；若当前耗费晶石数量大于一开始的第二种情况（攻击力 &gt;= 防御力 + 生命值），也可以跳过这次情况。所以只需在剩下的情况中选择耗费晶石数量最少的情况即可。<br></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> min(a, b) (a) &lt; (b) ? (a) : (b)</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span></span></div><div class="line"><span class="class">&#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function"><span class="keyword">int</span> <span class="title">dudubear</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; life, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; defense, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; star, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; attack, <span class="keyword">int</span> n, <span class="keyword">int</span> m)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">int</span> rightMinValue = <span class="number">100000</span>, leftMinValue = <span class="number">100000</span>, sum = <span class="number">0</span>;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; selectValue;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; newselectValue;</div><div class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m; ++j)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span> (attack[j] &gt;= life[i] + defense[i])</div><div class="line">                &#123;</div><div class="line">                    rightMinValue = min(star[j], rightMinValue);</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> ((attack[j] &gt; defense[i]) &amp;&amp; (attack[j] &lt; defense[i] + life[i]))</div><div class="line">                &#123;</div><div class="line">                    selectValue.push_back(j);</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (j == m - <span class="number">1</span>)</div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="comment">//因为技能可重复使用，但单个技能重复使用累加起来的伤害（攻击-防御）超过怪兽的生命值时无意义</span></div><div class="line">            <span class="comment">//所以每个技能的使用次数不能超过(life[i] / (attack[selectValue[j]] - defense[i]))+1</span></div><div class="line">            <span class="comment">//建立新数组，储存单个技能使用最大次数的数组</span></div><div class="line">            <span class="keyword">int</span> count = <span class="number">0</span>;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; selectValue.size(); ++j)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">int</span> items = (life[i] / (attack[selectValue[j]] - defense[i])) + <span class="number">1</span>;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; items; ++k)</div><div class="line">                &#123;</div><div class="line">                    newselectValue.push_back(selectValue[j]);</div><div class="line">                    ++count;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">			<span class="keyword">int</span> flag = <span class="number">4</span>;</div><div class="line">            <span class="keyword">int</span> bitcount = <span class="number">2</span>;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">3</span>; j &lt; (<span class="keyword">int</span>)<span class="built_in">pow</span>(<span class="number">2</span>, count); ++j)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span> (j == flag)</div><div class="line">                &#123;</div><div class="line">                    flag = flag &lt;&lt; <span class="number">1</span>;</div><div class="line">                    ++bitcount;</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="comment">//计算当前情况所耗费晶石数量</span></div><div class="line">                <span class="keyword">int</span> sumDamage = <span class="number">0</span>, sumStar = <span class="number">0</span>;</div><div class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt; bitcount + <span class="number">1</span>; ++k)</div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">if</span> ((j &gt;&gt; (k - <span class="number">1</span>) &amp; <span class="number">1</span>) == <span class="number">1</span>)</div><div class="line">                    &#123;</div><div class="line">                        sumDamage += attack[newselectValue[count - k]] - defense[i];</div><div class="line">                        sumStar += star[newselectValue[count - k]];</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (sumDamage &lt; life[i])</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                <span class="keyword">if</span> (sumStar &gt; rightMinValue)</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                leftMinValue = min(sumStar, leftMinValue);</div><div class="line">            &#125;</div><div class="line">            leftMinValue == <span class="number">100000</span> ? sum += rightMinValue : sum += leftMinValue;</div><div class="line">            leftMinValue = <span class="number">100000</span>;</div><div class="line">            rightMinValue = <span class="number">100000</span>;</div><div class="line">            selectValue.clear();</div><div class="line">            newselectValue.clear();</div><div class="line">        &#125;</div><div class="line">		<span class="keyword">return</span> sum;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/28/2017百度之星资格赛-1003：度度熊与邪恶大魔王/" data-id="cj9c0anoq0006tkoox7z72erf" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2017百度之星资格赛-1003：度度熊与邪恶大魔王/">2017百度之星资格赛 1003：度度熊与邪恶大魔王</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
- <script src="/jquery/jquery.min.js"></script>
-  <div id="random_posts">
-    <h2>推荐文章</h2>
-    <div class="random_posts_ul">
-      <script>
-          var random_count =4
-          var site = {BASE_URI:'/'};
-          function load_random_posts(obj) {
-              var arr=site.posts;
-              if (!obj) return;
-              // var count = $(obj).attr('data-count') || 6;
-              for (var i, tmp, n = arr.length; n; i = Math.floor(Math.random() * n), tmp = arr[--n], arr[n] = arr[i], arr[i] = tmp);
-              arr = arr.slice(0, random_count);
-              var html = '<ul>';
-            
-              for(var j=0;j<arr.length;j++){
-                var item=arr[j];
-                html += '<li><strong>' + 
-                item.date + ':&nbsp;&nbsp;<a href="' + (site.BASE_URI+item.uri) + '">' + 
-                (item.title || item.uri) + '</a></strong>';
-                if(item.excerpt){
-                  html +='<div class="post-excerpt">'+item.excerpt+'</div>';
-                }
-                html +='</li>';
-                
-              }
-              $(obj).html(html + '</ul>');
-          }
-          $('.random_posts_ul').each(function () {
-              var c = this;
-              if (!site.posts || !site.posts.length){
-                  $.getJSON(site.BASE_URI + 'js/posts.js',function(json){site.posts = json;load_random_posts(c)});
-              } 
-               else{
-                load_random_posts(c);
-              }
-          });
-      </script>
-    </div>
+  <span></span> <a href="/tags/2017百度之星资格赛-1003：度度熊与邪恶大魔王/">2017百度之星资格赛 1003：度度熊与邪恶大魔王</a>
   </div>
 
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2017/10/28/leetcode42-Trapping-Rain-Water/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">leetcode42. Trapping Rain Water</div>
-    </a>
-  
-</nav>
-
-  
-</article>
- 
-     
-  <div class="comments" id="comments">
-    
-     
-       
-      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-    
-       
-      
-      
-  </div>
- 
-  
-
-</section>
-           
-    <aside id="sidebar">
-  
-    
-
-  
-    
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title recent-posts">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/10/28/2017百度之星资格赛-1003：度度熊与邪恶大魔王/">2017百度之星资格赛 1003：度度熊与邪恶大魔王</a>
-          </li>
-        
-          <li>
-            <a href="/2017/10/28/leetcode42-Trapping-Rain-Water/">leetcode42. Trapping Rain Water</a>
-          </li>
-        
-          <li>
-            <a href="/2017/10/28/leetcode68-Text-Justification/">title:leetcode68. Text JustificationWater</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-
-  
-    
-  
-    <!--微信公众号二维码-->
+</div>
 
 
-  
-</aside>
 
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-left">
-      &copy; 2014 - 2017 muyi&nbsp;|&nbsp;
-      主题 <a href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe</a>
-    </div>
-     <div id="footer-right">
-      联系方式&nbsp;|&nbsp;youemail@outlook.com
-    </div>
-  </div>
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2017/10/28/2017百度之星资格赛-1003：度度熊与邪恶大魔王/" data-title="2017百度之星资格赛 1003：度度熊与邪恶大魔王 | Afennnnn" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
 </footer>
- <script src="/jquery/jquery.min.js"></script>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">首页</a>
-  
-    <a href="/archives" class="mobile-nav-link">归档</a>
-  
-    <a href="/about" class="mobile-nav-link">关于</a>
-  
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2017/10/28/leetcode42-Trapping-Rain-Water/"  title="leetcode42. Trapping Rain Water">
+ <strong>下一篇：</strong><br/> 
+ <span>leetcode42. Trapping Rain Water
+</span>
+</a>
+</div>
+
 </nav>
-    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
-<script>
-// Elevator script included on the page, already.
-window.onload = function() {
-  var elevator = new Elevator({
-    selector:'.back-to-top-btn',
-    element: document.querySelector('.back-to-top-btn'),
-    duration: 1000 // milliseconds
-  });
-}
-</script>
-      
 
-  
-    <script>
-      var cloudTieConfig = {
-        url: document.location.href, 
-        sourceId: "",
-        productKey: "e2fb4051c49842688ce669e634bc983f",
-        target: "cloud-tie-wrapper"
-      };
-    </script>
-    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
-    
-
-  
+	
 
 
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
-
-
-
-
-<!-- author:forvoid begin -->
-<!-- author:forvoid begin -->
-
-<!-- author:forvoid end -->
-
-<!-- author:forvoid end -->
-
-
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      })
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      })
-    </script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
- <script src="/js/is.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-<script src="/js/elevator.js"></script>
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
   </div>
-</body>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/2017百度之星资格赛-1003：度度熊与邪恶大魔王/" title="2017百度之星资格赛 1003：度度熊与邪恶大魔王">2017百度之星资格赛 1003：度度熊与邪恶大魔王<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/leetcode42-Trapping-Rain-Water/" title="leetcode42. Trapping Rain Water">leetcode42. Trapping Rain Water<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/title-leetcode68-Text-Justification/" title="title:leetcode68. Text Justification">title:leetcode68. Text Justification<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Larry Page in Google. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="muyi">muyi</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
 </html>
