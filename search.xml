@@ -48,7 +48,7 @@
             
             <tag> C++ </tag>
             
-            <tag> leetcode </tag>
+            <tag> LeetCode </tag>
             
         </tags>
         
@@ -94,7 +94,7 @@ str += string(当前位置应分配的空字符数量, &apos; &apos;);
             
             <tag> C++ </tag>
             
-            <tag> leetcode </tag>
+            <tag> LeetCode </tag>
             
         </tags>
         
