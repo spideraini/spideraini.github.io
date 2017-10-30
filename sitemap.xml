@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://spideraini.github.io/2017/10/30/test/</loc>
+    
+    <lastmod>2017-10-30T04:49:07.286Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://spideraini.github.io/categories/index.html</loc>
+    
+    <lastmod>2017-10-30T04:46:49.518Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://spideraini.github.io/tags/index.html</loc>
+    
+    <lastmod>2017-10-30T04:46:46.590Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://spideraini.github.io/2017/10/28/leetcode42-Trapping-Rain-Water/</loc>
     
-    <lastmod>2017-10-30T04:41:08.687Z</lastmod>
+    <lastmod>2017-10-30T04:43:53.798Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://spideraini.github.io/2017/10/28/leetcode68-Text-Justification/</loc>
     
-    <lastmod>2017-10-30T04:41:06.823Z</lastmod>
+    <lastmod>2017-10-30T04:43:47.791Z</lastmod>
     
   </url>
   
@@ -19,20 +40,6 @@
     <loc>https://spideraini.github.io/404.html</loc>
     
     <lastmod>2017-10-30T04:27:33.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://spideraini.github.io/tags/index.html</loc>
-    
-    <lastmod>2017-10-30T04:13:23.397Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://spideraini.github.io/categories/index.html</loc>
-    
-    <lastmod>2017-10-30T04:13:21.591Z</lastmod>
     
   </url>
   
