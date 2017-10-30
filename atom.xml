@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://spideraini.github.io/"/>
-  <updated>2017-10-30T04:33:29.046Z</updated>
+  <updated>2017-10-30T03:49:02.894Z</updated>
   <id>https://spideraini.github.io/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>z_404</title>
-    <link href="https://spideraini.github.io/2017/10/30/z_404/"/>
-    <id>https://spideraini.github.io/2017/10/30/z_404/</id>
-    <published>2017-10-30T04:22:24.000Z</published>
-    <updated>2017-10-30T04:33:29.046Z</updated>
-    
-    <content type="html"><![CDATA[<p>点击tags最后一个标签总是会跳转到404页面，网上找到的解决方法基本上都试了一遍，然而并没有起作用，因此暂时添加了一个‘z_404’标签，这样其它标签就可以起作用了</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;点击tags最后一个标签总是会跳转到404页面，网上找到的解决方法基本上都试了一遍，然而并没有起作用，因此暂时添加了一个‘z_404’标签，这样其它标签就可以起作用了&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="z_404" scheme="https://spideraini.github.io/tags/z-404/"/>
-    
-  </entry>
   
   <entry>
     <title>2017百度之星资格赛 1003：度度熊与邪恶大魔王</title>
